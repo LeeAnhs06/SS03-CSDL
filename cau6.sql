@@ -25,8 +25,8 @@ create table enrollment (
 create table score (
     student_id int,
     subject_id int,
-    mid_score float,
-    final_score float,
+    mid_score float (mid_score between 0 and 10),
+    final_score float (final_score between 0 and 10),
     primary key (student_id, subject_id)
 );
 
