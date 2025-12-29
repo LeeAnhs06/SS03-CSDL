@@ -11,7 +11,7 @@ create table if not exists studentss03 (
 create table if not exists subject (
     subject_id int primary key,
     subject_name varchar(50),
-    credit int
+    credit int check (credit >0 ),
 );
 
 create table if not exists enrollment (
